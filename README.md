@@ -1,13 +1,12 @@
-# Treebank Template
+# Gorman Trees
 
-Template for publishing collections of treebanks.
+Set of treebanks published by Vanessa and Bob Gorman at the University of Nebraska-Lincoln.
 
-The treebanks themselves live in the `./public/xml` directory.
-All other configuration is done using `./src/config.json`.
+Based on the template [here](https://github.com/perseids-publications/treebank-template).
 
 ## Try it Out
 
-[https://perseids-publications.github.io/treebank-template/](https://perseids-publications.github.io/treebank-template/)
+[https://perseids-publications.github.io/gorman-trees/](https://perseids-publications.github.io/gorman-trees/)
 
 ## How to configure with your own treebanks
 
