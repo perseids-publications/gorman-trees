@@ -3,8 +3,9 @@ import {
 } from 'prop-types';
 
 export const chunksType = shape({
-  start: number.isRequired,
-  end: number.isRequired,
+  start: number,
+  end: number,
+  numbers: arrayOf(oneOfType([number, string])),
 });
 
 export const sectionType = shape({
@@ -20,7 +21,7 @@ export const publicationType = shape({
   path: string.isRequired,
   author: string.isRequired,
   work: string.isRequired,
-  editors: string.isRequired,
+  editors: oneOfType([string, arrayOf(string)]).isRequired,
   sections: arrayOf(sectionType).isRequired,
 });
 

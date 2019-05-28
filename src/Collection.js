@@ -3,9 +3,19 @@ import PropTypes from 'prop-types';
 
 import { publicationType } from './types';
 
+const getStart = (chunks) => {
+  const { start, numbers } = chunks;
+
+  if (start) {
+    return start;
+  }
+
+  return numbers[0];
+};
+
 const renderSection = (section) => {
   const { locus, path, chunks } = section;
-  const { start } = chunks;
+  const start = getStart(chunks);
 
   return (
     <React.Fragment key={path}>
@@ -15,6 +25,18 @@ const renderSection = (section) => {
       <br />
     </React.Fragment>
   );
+};
+
+const renderEditors = (editors) => {
+  if (Array.isArray(editors)) {
+    return (
+      <ul className="pl-1">
+        {editors.map(e => <li key={e}>{e}</li>)}
+      </ul>
+    );
+  }
+
+  return editors;
 };
 
 const renderRow = (publication) => {
@@ -30,13 +52,16 @@ const renderRow = (publication) => {
     <tr className="d-flex" key={path}>
       <th className="col-md-3 d-none d-md-block" scope="row">{author}</th>
       <td className="col-md-4 d-none d-md-block">{work}</td>
-      <td className="col-8 col-sm-6 d-block d-md-none">
+      <td className="col-8 col-sm-7 d-block d-md-none">
         <strong>{author}</strong>
         ,
+        {' '}
         <em>{work}</em>
       </td>
-      <td className="col-sm-3 col-lg-3 d-none d-sm-block">{editors}</td>
-      <td className="col-4 col-sm-3 col-md-2 col-lg-2 text-right">
+      <td className="col-md-3 col-lg-3 d-none d-md-block">
+        {renderEditors(editors)}
+      </td>
+      <td className="col-4 col-sm-5 col-md-2 col-lg-2 text-right">
         {sections.map(s => renderSection(s))}
       </td>
     </tr>
@@ -52,9 +77,9 @@ const Collection = ({ title, publications }) => (
           <thead className="thead-light">
             <tr className="d-flex">
               <th className="col-md-3 d-none d-md-block" scope="col">Author</th>
-              <th className="col-8 col-sm-6 col-md-4" scope="col">Work</th>
-              <th className="col-sm-3 col-lg-3 d-none d-sm-block" scope="col">Editors</th>
-              <th className="col-4 col-sm-3 col-md-2 col-lg-2" scope="col">Locus</th>
+              <th className="col-8 col-sm-7 col-md-4" scope="col">Work</th>
+              <th className="col-md-3 col-lg-3 d-none d-md-block" scope="col">Editors</th>
+              <th className="col-4 col-sm-5 col-md-2 col-lg-2" scope="col">Locus</th>
             </tr>
           </thead>
           <tbody>
