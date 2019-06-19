@@ -713,6 +713,23 @@
           ]
         },
         {
+          "path": "plato-apology",
+          "author": "Plato",
+          "work": "Apology",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "17a-42a (entire)",
+              "path": "plato-apology-17a-42a",
+              "xml": "plato-apology-17a-42a.xml",
+              "chunks": {
+                "start": 1,
+                "end": 481
+              }
+            }
+          ]
+        },
+        {
           "path": "plutarch-alcibiades",
           "author": "Plutarch",
           "work": "Alcibiades",
