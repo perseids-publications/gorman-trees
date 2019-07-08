@@ -1,6 +1,6 @@
 # Gorman Trees
 
-Set of treebanks published by Vanessa and Bob Gorman at the University of Nebraska-Lincoln.
+Set of treebanks published by Vanessa Gorman at the University of Nebraska-Lincoln.
 
 Based on the template [here](https://github.com/perseids-publications/treebank-template).
 
