@@ -70,6 +70,50 @@
           ]
         },
         {
+          "path": "appian-civil-wars",
+          "author": "Appian",
+          "work": "The Civil Wars",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1.0.1-1.4.33",
+              "path": "appian-bc-1-0-1-4-bu1",
+              "xml": "appian-bc-1-0-1-4-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 246
+              }
+            },
+            {
+              "locus": "1.5.33-1.7.63",
+              "path": "appian-bc-1-5-7-bu1",
+              "xml": "appian-bc-1-5-7-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 235
+              }
+            },
+            {
+              "locus": "1.8.64-1.10.94",
+              "path": "appian-bc-1-8-10-bu1",
+              "xml": "appian-bc-1-8-10-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 248
+              }
+            },
+            {
+              "locus": "1.11.95-1.14.121",
+              "path": "appian-bc-1-11-14-bu1",
+              "xml": "appian-bc-1-11-14-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 237
+              }
+            }
+          ]
+        },
+        {
           "path": "athenaeus-deipnosophistae",
           "author": "Athenaeus",
           "work": "Deipnosophistae",
