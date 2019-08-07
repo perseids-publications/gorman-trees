@@ -11,7 +11,7 @@
         {
           "path": "aeschines-against-timarchus",
           "author": "Aeschines",
-          "work": "Against Timarchus",
+          "work": "1. Against Timarchus",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -53,9 +53,9 @@
           ]
         },
         {
-          "path": "antiphon-prosecution-of-the-stepmother-for-poisoning",
+          "path": "antiphon-against-the-stepmother-for-poisoning",
           "author": "Antiphon",
-          "work": "Prosecution Of The Stepmother For Poisoning",
+          "work": "1. Against the Stepmother for Poisoning",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -65,6 +65,57 @@
               "chunks": {
                 "start": 1,
                 "end": 94
+              }
+            }
+          ]
+        },
+        {
+          "path": "antiphon-first-tetralogy",
+          "author": "Antiphon",
+          "work": "2. First Tetralogy",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1.1-4.12",
+              "path": "antiphon-2-bu2",
+              "xml": "antiphon-2-bu2.xml",
+              "chunks": {
+                "start": 1,
+                "end": 154
+              }
+            }
+          ]
+        },
+        {
+          "path": "antiphon-on-the-murder-of-herodes",
+          "author": "Antiphon",
+          "work": "5. On the Murder of Herodes",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-96",
+              "path": "antiphon-5-bu2",
+              "xml": "antiphon-5-bu2.xml",
+              "chunks": {
+                "start": 1,
+                "end": 372
+              }
+            }
+          ]
+        },
+        {
+          "path": "antiphon-on-the-chorus-boy",
+          "author": "Antiphon",
+          "work": "6. On the Chorus Boy",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-51",
+              "path": "antiphon-6-bu2",
+              "xml": "antiphon-6-bu2.xml",
+              "chunks": {
+                "start": 1,
+                "end": 144
               }
             }
           ]
@@ -284,9 +335,26 @@
           ]
         },
         {
+          "path": "demosthenes-speech-4-greek-machine-readable-text",
+          "author": "Demosthenes",
+          "work": "4. Philippic 1",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-51",
+              "path": "demosthenes-4-phil1-bu1",
+              "xml": "demosthenes-4-phil1-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 159
+              }
+            }
+          ]
+        },
+        {
           "path": "demosthenes-on-the-crown",
           "author": "Demosthenes",
-          "work": "On the Crown",
+          "work": "18. On the Crown",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -341,23 +409,6 @@
               "chunks": {
                 "start": 1,
                 "end": 162
-              }
-            }
-          ]
-        },
-        {
-          "path": "demosthenes-speech-4-greek-machine-readable-text",
-          "author": "Demosthenes",
-          "work": "Philippic 1",
-          "editors": "Vanessa Gorman",
-          "sections": [
-            {
-              "locus": "1-51",
-              "path": "demosthenes-4-phil1-bu1",
-              "xml": "demosthenes-4-phil1-bu1.xml",
-              "chunks": {
-                "start": 1,
-                "end": 159
               }
             }
           ]
@@ -638,9 +689,43 @@
           ]
         },
         {
+          "path": "lysias-on-the-murder-of-eratosthenes",
+          "author": "Lysias",
+          "work": "1. On the Murder of Eratosthenes",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-50",
+              "path": "lysias-1-bu1",
+              "xml": "lysias-1-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 134
+              }
+            }
+          ]
+        },
+        {
+          "path": "lysias-against-eratosthenes",
+          "author": "Lysias",
+          "work": "12. Against Eratosthenes",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-100",
+              "path": "lysias-12-bu1",
+              "xml": "lysias-12-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 244
+              }
+            }
+          ]
+        },
+        {
           "path": "lysias-against-agoratus",
           "author": "Lysias",
-          "work": "Against Agoratus",
+          "work": "13. Against Agoratus",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -657,7 +742,7 @@
         {
           "path": "lysias-against-alcibiades-1",
           "author": "Lysias",
-          "work": "Against Alcibiades 1",
+          "work": "14. Against Alcibiades 1",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -674,7 +759,7 @@
         {
           "path": "lysias-against-alcibiades-2",
           "author": "Lysias",
-          "work": "Against Alcibiades 2",
+          "work": "15. Against Alcibiades 2",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -689,60 +774,9 @@
           ]
         },
         {
-          "path": "lysias-against-eratosthenes",
-          "author": "Lysias",
-          "work": "Against Eratosthenes",
-          "editors": "Vanessa Gorman",
-          "sections": [
-            {
-              "locus": "1-100",
-              "path": "lysias-12-bu1",
-              "xml": "lysias-12-bu1.xml",
-              "chunks": {
-                "start": 1,
-                "end": 244
-              }
-            }
-          ]
-        },
-        {
-          "path": "lysias-against-pancleon",
-          "author": "Lysias",
-          "work": "Against Pancleon",
-          "editors": "Vanessa Gorman",
-          "sections": [
-            {
-              "locus": "1-16",
-              "path": "lysias-23-bu1",
-              "xml": "lysias-23-bu1.xml",
-              "chunks": {
-                "start": 1,
-                "end": 46
-              }
-            }
-          ]
-        },
-        {
-          "path": "lysias-on-the-murder-of-eratosthenes",
-          "author": "Lysias",
-          "work": "On the Murder of Eratosthenes",
-          "editors": "Vanessa Gorman",
-          "sections": [
-            {
-              "locus": "1-50",
-              "path": "lysias-1-bu1",
-              "xml": "lysias-1-bu1.xml",
-              "chunks": {
-                "start": 1,
-                "end": 134
-              }
-            }
-          ]
-        },
-        {
           "path": "lysias-on-the-property-of-aristophanes",
           "author": "Lysias",
-          "work": "On the Property of Aristophanes",
+          "work": "19. On the Property of Aristophanes",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -752,6 +786,23 @@
               "chunks": {
                 "start": 1,
                 "end": 168
+              }
+            }
+          ]
+        },
+        {
+          "path": "lysias-against-pancleon",
+          "author": "Lysias",
+          "work": "23. Against Pancleon",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-16",
+              "path": "lysias-23-bu1",
+              "xml": "lysias-23-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 46
               }
             }
           ]
