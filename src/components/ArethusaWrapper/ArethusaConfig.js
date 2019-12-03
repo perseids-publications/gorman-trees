@@ -1,9 +1,9 @@
-const ArethusaConfig = {
+const defaultConfig = {
   main: {
     debug: false,
     showKeys: false,
     chunkParam: 'chunk',
-    auxConfPath: 'https://services.perseids.org/arethusa-configs',
+    auxConfPath: '/arethusa/configs',
     retrievers: {
       TreebankRetriever: {
         resource: 'Gardener',
@@ -75,10 +75,25 @@ const ArethusaConfig = {
       template: 'js/templates/dep_tree.html',
     },
     morph: {
-      noRetrieval: 'online',
+      retrievers: {
+        BspMorphRetriever: {
+          resource: 'morphologyServiceLat',
+        },
+      },
+      template: 'js/templates/morph3.html',
       contextMenu: true,
       contextMenuTemplate: 'js/arethusa.morph/templates/context_menu.html',
+      lexicalInventory: {
+        retriever: {
+          LexicalInventoryRetriever: {
+            resource: 'lexInvFusekiEndpoint',
+          },
+        },
+      },
+      matchAll: true,
+      '@include': 'js/arethusa.morph/configs/morph/lat_attributes.json',
     },
+
     relation: {
       advancedMode: true,
       relations: {},
@@ -100,4 +115,12 @@ const ArethusaConfig = {
   },
 };
 
-export default ArethusaConfig;
+const sidepanelConfig = JSON.parse(JSON.stringify(defaultConfig));
+sidepanelConfig.main.layouts = [
+  {
+    name: 'main_with_sidepanel',
+    template: 'js/templates/main_with_sidepanel.html',
+  },
+];
+
+export { defaultConfig, sidepanelConfig };
