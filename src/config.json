@@ -361,6 +361,23 @@
           ]
         },
         {
+          "path": "demosthenes-first-olynthiac",
+          "author": "Demosthenes",
+          "work": "1. First Olynthiac",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-28",
+              "path": "demosthenes-1-bu1",
+              "xml": "demosthenes-1-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 91
+              }
+            }
+          ]
+        },
+        {
           "path": "demosthenes-speech-4-greek-machine-readable-text",
           "author": "Demosthenes",
           "work": "4. Philippic 1",
@@ -435,6 +452,23 @@
               "chunks": {
                 "start": 1,
                 "end": 162
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-apollodorus-against-neaera",
+          "author": "Demosthenes",
+          "work": "59. Apollodorus Against Neaera",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-126",
+              "path": "dem-59-neaira-2019",
+              "xml": "dem-59-neaira-2019.xml",
+              "chunks": {
+                "start": 1,
+                "end": 312
               }
             }
           ]
@@ -1368,6 +1402,33 @@
               "chunks": {
                 "start": 1,
                 "end": 217
+              }
+            },
+            {
+              "locus": "8.1.1-8.4.36",
+              "path": "xen-cyr-8-1-8-4-bu1",
+              "xml": "xen-cyr-8-1-8-4-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 564
+              }
+            },
+            {
+              "locus": "8.5.1-8.7.28",
+              "path": "xen-cyr-8-5-7-bu1",
+              "xml": "xen-cyr-8-5-7-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 242
+              }
+            },
+            {
+              "locus": "8.8.1-8.8.27",
+              "path": "xen-cyr-8-8-bu1",
+              "xml": "xen-cyr-8-8-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 78
               }
             }
           ]
