@@ -1,6 +1,6 @@
 {
   "title": "Gorman Trees",
-  "subtitle": "Greek prose trees by Vanessa Gorman",
+  "subtitle": "Greek prose trees by Vanessa Gorman, Prof. of History, University of Nebraska-Lincoln, vgorman1@unl.edu and vbgorman@gmail.com\n\nThe treebanks are licensed under the CC0 1.0 license (see [TREEBANK_LICENSE](https://github.com/vgorman1/Greek-Dependency-Trees/blob/master/TREEBANK%20LICENSE) file). Please cite: Version 1.0.1 (31 December 2019) DOI: 10.5281/zenodo.3596076\n\n[https://github.com/vgorman1/Greek-Dependency-Trees](https://github.com/vgorman1/Greek-Dependency-Trees)",
   "report": "https://github.com/perseids-publications/gorman-trees/issues",
   "github": "https://github.com/perseids-publications/gorman-trees",
   "twitter": "",
@@ -319,7 +319,7 @@
               "xml": "athen13-50-59-jan-15.xml",
               "chunks": {
                 "start": 1,
-                "end": 153
+                "end": 150
               }
             },
             {
@@ -356,6 +356,23 @@
               "chunks": {
                 "start": 1,
                 "end": 81
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-first-olynthiac",
+          "author": "Demosthenes",
+          "work": "1. First Olynthiac",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-28",
+              "path": "demosthenes-1-bu1",
+              "xml": "demosthenes-1-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 91
               }
             }
           ]
@@ -435,6 +452,23 @@
               "chunks": {
                 "start": 1,
                 "end": 162
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-apollodorus-against-neaera",
+          "author": "Demosthenes",
+          "work": "59. Apollodorus Against Neaera",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-126",
+              "path": "dem-59-neaira-2019",
+              "xml": "dem-59-neaira-2019.xml",
+              "chunks": {
+                "start": 1,
+                "end": 312
               }
             }
           ]
@@ -1368,6 +1402,33 @@
               "chunks": {
                 "start": 1,
                 "end": 217
+              }
+            },
+            {
+              "locus": "8.1.1-8.4.36",
+              "path": "xen-cyr-8-1-8-4-bu1",
+              "xml": "xen-cyr-8-1-8-4-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 564
+              }
+            },
+            {
+              "locus": "8.5.1-8.7.28",
+              "path": "xen-cyr-8-5-7-bu1",
+              "xml": "xen-cyr-8-5-7-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 242
+              }
+            },
+            {
+              "locus": "8.8.1-8.8.27",
+              "path": "xen-cyr-8-8-bu1",
+              "xml": "xen-cyr-8-8-bu1.xml",
+              "chunks": {
+                "start": 1,
+                "end": 78
               }
             }
           ]
