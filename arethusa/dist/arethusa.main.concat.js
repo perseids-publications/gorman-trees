@@ -46,6 +46,19 @@ angular.module('arethusa').config([
 
     localStorageServiceProvider.setPrefix('arethusa');
   },
+]).config([
+  // This config prevents URL changes done using the browser's History API
+  // from causing Angular to enter an infinite loop.
+  // See https://stackoverflow.com/questions/18611214/turn-off-url-manipulation-in-angularjs
+  '$provide',
+  function ($provide) {
+    $provide.decorator('$browser', ['$delegate', function ($delegate) {
+      $delegate.onUrlChange = function () {};
+      $delegate.url = function () { return '' };
+
+      return $delegate;
+    }]);
+  }
 ]);
 
 angular.module('arethusa').value('CONF_PATH', '/configs');
@@ -990,10 +1003,10 @@ angular.module('arethusa').service('retrieverHelper', [
 'use strict';
 
 angular.module('arethusa').constant('VERSION', {
-  revision: '6e816c7cdf1e70df605ff74394a5b1833a61aa40',
-  branch: 'widget-api',
+  revision: 'b1ea495d3eddee718bc2729b69fe2fc1202d7775',
+  branch: 'gardener_widget',
   version: '0.2.5',
-  date: '2020-03-11T17:00:57.844Z',
+  date: '2020-04-27T14:42:52.306Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
