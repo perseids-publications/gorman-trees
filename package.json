@@ -1,16 +1,20 @@
 {
   "name": "gorman-trees",
-  "version": "2.1.1",
+  "version": "1.0.1",
+  "treebank-template": {
+    "version": "3.0.2"
+  },
   "private": true,
   "homepage": "https://perseids-publications.github.io/gorman-trees/",
   "dependencies": {
     "@primer/octicons-react": "^9.6.0",
     "alpheios-messaging": "https://github.com/alpheios-project/alpheios-messaging",
+    "arethusa-widget": "^2.0.0",
     "bootstrap": "^4.4.1",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-jest": "^23.8.2",
     "gh-pages": "^2.2.0",
-    "perseids-react-components": "^0.3.0",
+    "perseids-react-components": "^1.0.0",
     "prop-types": "^15.6.2",
     "query-string": "^6.12.1",
     "react": "^16.13.1",
