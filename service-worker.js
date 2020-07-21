@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gorman-trees/precache-manifest.983d5dd6a839d627f8eabb50ef2824a8.js"
+  "/gorman-trees/precache-manifest.5b9902b0b520438c59e3ecfb8c899a7a.js"
 );
 
 self.addEventListener('message', (event) => {
