@@ -740,7 +740,7 @@ Array [
             className="navbar-nav mx-auto"
           >
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -751,7 +751,7 @@ Array [
               </a>
             </li>
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -1727,7 +1727,9 @@ Array [
                 Next ›
               </a>
             </li>
-            <li>
+            <li
+              className="nav-item"
+            >
               <a
                 className="nav-link text-light link"
                 href="/on-the-murder-of-eratosthenes-1-50/134"
@@ -2234,7 +2236,7 @@ Array [
             className="navbar-nav mx-auto"
           >
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -2245,7 +2247,7 @@ Array [
               </a>
             </li>
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -3396,7 +3398,9 @@ Array [
                 Next ›
               </a>
             </li>
-            <li>
+            <li
+              className="nav-item"
+            >
               <a
                 className="nav-link text-light link"
                 href="/philippic-1-51/159"
@@ -3705,7 +3709,7 @@ Array [
             className="navbar-nav mx-auto"
           >
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -3716,7 +3720,7 @@ Array [
               </a>
             </li>
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -4874,7 +4878,9 @@ Array [
                 Next ›
               </a>
             </li>
-            <li>
+            <li
+              className="nav-item"
+            >
               <a
                 className="nav-link text-light link"
                 href="/on-the-crown-1-50/160"
@@ -5181,7 +5187,7 @@ Array [
             className="navbar-nav mx-auto"
           >
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -5192,7 +5198,7 @@ Array [
               </a>
             </li>
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -6168,7 +6174,9 @@ Array [
                 Next ›
               </a>
             </li>
-            <li>
+            <li
+              className="nav-item"
+            >
               <a
                 className="nav-link text-light link"
                 href="/on-the-murder-of-eratosthenes-1-50/134?config=sidepanel"
@@ -6475,7 +6483,7 @@ Array [
             className="navbar-nav mx-auto"
           >
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -6486,7 +6494,7 @@ Array [
               </a>
             </li>
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -7462,7 +7470,9 @@ Array [
                 Next ›
               </a>
             </li>
-            <li>
+            <li
+              className="nav-item"
+            >
               <a
                 className="nav-link text-light link"
                 href="/on-the-murder-of-eratosthenes-1-50/134"
@@ -7759,7 +7769,7 @@ Array [
             className="navbar-nav mx-auto"
           >
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -7770,7 +7780,7 @@ Array [
               </a>
             </li>
             <li
-              className="nav-item"
+              className="nav-item invisible"
             >
               <a
                 className="nav-link text-light link"
@@ -8928,7 +8938,9 @@ Array [
                 Next ›
               </a>
             </li>
-            <li>
+            <li
+              className="nav-item"
+            >
               <a
                 className="nav-link text-light link"
                 href="/on-the-crown-1-50/160"
