@@ -205,3 +205,14 @@ it('renders the getting started page', () => {
 
   expect(tree).toMatchSnapshot();
 });
+
+it('renders the doi page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/doi']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});

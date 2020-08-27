@@ -2,7 +2,7 @@ import React from 'react';
 
 import { configType } from '../../../lib/types';
 
-import styles from './GettingStarted.module.css';
+import styles from '../Instructions.module.css';
 
 import fork from './fork.png';
 import forked from './forked.png';
@@ -27,7 +27,7 @@ import InstructionsHeader from '../InstructionsHeader';
 const GettingStarted = ({ config }) => (
   <>
     <InstructionsHeader config={config} title="Getting Started" />
-    <div className="container pt-3 pb-4">
+    <div className={`container pt-3 pb-4 ${styles.instructions}`}>
       <div className="row">
         <div className="col">
           <h2>Overview</h2>
@@ -44,7 +44,7 @@ const GettingStarted = ({ config }) => (
         <div className="col">
           <h2>Minimum Prerequisities</h2>
 
-          <ol className={styles.list}>
+          <ol>
             <li>
               Have some treebank data files to publish. Currently this publication
               template requires treebank XML files that adhere to the
