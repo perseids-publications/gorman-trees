@@ -194,3 +194,25 @@ it('renders a custom link', () => {
 
   delete config.link;
 });
+
+it('renders the getting started page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/getting-started']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders the doi page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/doi']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
