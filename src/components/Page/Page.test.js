@@ -216,3 +216,14 @@ it('renders the doi page', () => {
 
   expect(tree).toMatchSnapshot();
 });
+
+it('renders the update page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/update']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});

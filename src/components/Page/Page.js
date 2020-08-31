@@ -10,6 +10,7 @@ import Home from '../Home';
 import NotFound from '../NotFound';
 import PublicationDirector from '../PublicationDirector';
 import PublicationGroupDirector from '../PublicationGroupDirector';
+import Updating from '../Instructions/Updating';
 
 const Page = ({
   config,
@@ -26,6 +27,7 @@ const Page = ({
       <Route exact path="/" component={() => <Home config={config} />} />
       <Route exact path="/getting-started" component={() => <GettingStarted config={config} />} />
       <Route exact path="/doi" component={() => <Doi config={config} />} />
+      <Route exact path="/updating" component={() => <Updating config={config} />} />
       <Route exact path="/:publication" render={(props) => <PublicationGroupDirector {...props} config={config} />} />
       <Route exact path="/:publication/:chunk" render={(props) => <PublicationDirector {...props} config={config} />} />
       <Route path="/" component={() => <NotFound config={config} />} />
