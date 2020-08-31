@@ -18,6 +18,7 @@ import configEdit from './config-edit.png';
 import progress from './progress.png';
 import success from './success.png';
 import site from './site.png';
+import env from './env.png';
 import upload from './upload.png';
 import myTreesConfig from './mytrees-config.png';
 import myTreesSite from './mytrees-site.png';
@@ -308,7 +309,7 @@ const GettingStarted = ({ config }) => (
                   Scroll to the bottom of the page to
                   {' '}
                   <code>
-                    Commit Changes
+                    Commit changes
                   </code>
                   {' '}
                   and enter a message to describe your
@@ -336,7 +337,7 @@ const GettingStarted = ({ config }) => (
                   Click
                   {' '}
                   <code>
-                    Commit Changes
+                    Commit changes
                   </code>
                   .
                 </li>
@@ -434,7 +435,7 @@ const GettingStarted = ({ config }) => (
                     Code
                   </code>
                   {' '}
-                  tag and navigate to the
+                  tab and navigate to the
                   {' '}
                   <code>
                     src
@@ -462,7 +463,7 @@ const GettingStarted = ({ config }) => (
                   <ul>
                     <li>
                       <code>title</code>
-                      : set this to whatever you whe the title of your
+                      : set this to whatever you want the title of your
                       site to be.
                     </li>
                     <li>
@@ -540,7 +541,7 @@ const GettingStarted = ({ config }) => (
                 <li>
                   Scroll to the bottom of the page to
                   {' '}
-                  <code>Commit Changes</code>
+                  <code>Commit changes</code>
                   {' '}
                   and enter a message to describe your change to this file.
                   (e.g. something like
@@ -618,6 +619,121 @@ const GettingStarted = ({ config }) => (
 
                   So far it is published only with the default treebank files that come with the
                   template. The next steps show you had to add a new file.
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>Update the metadata.</strong>
+              <ol>
+                <li>
+                  Go back to the
+                  {' '}
+                  <code>
+                    Code
+                  </code>
+                  {' '}
+                  tab and click on the
+                  {' '}
+                  <code>
+                    .env
+                  </code>
+                  {' '}
+                  file.
+                </li>
+                <li>
+                  Click the
+                  {' '}
+                  <code>
+                    edit
+                  </code>
+                  {' '}
+                  icon.
+
+                  <a href={env} target="_blank" rel="noopener noreferrer">
+                    <img
+                      className="img-fluid img-thumbnail"
+                      src={env}
+                      alt=".env file in the GitHub visual editor"
+                    />
+                  </a>
+                </li>
+                <li>
+                  Replace
+                  {' '}
+                  <code>
+                    perseids-publications.github.io
+                  </code>
+                  {' '}
+                  with, e.g.,
+                  {' '}
+                  <code>
+                    yourgithubaccount.github.io
+                  </code>
+                  {' '}
+                  after
+                  {' '}
+                  <code>
+                    REACT_APP_IMAGE_URL
+                  </code>
+                  {' '}
+                  and
+                  {' '}
+                  <code>
+                    REACT_APP_URL
+                  </code>
+                  .
+                  That is, if your GitHub user name is &quot;janedoe&quot; you would change
+                  {' '}
+                  <code>
+                    https://perseids-publications.github.io/treebank-template/
+                  </code>
+                  {' '}
+                  to
+                  {' '}
+                  <code>
+                    https://janedoe.github.io/treebank-template/
+                  </code>
+                  .
+                </li>
+                <li>
+                  Replace the other pieces of metadata with appropriate values:
+                  <ul>
+                    <li>
+                      <code>REACT_APP_SITE_NAME</code>
+                      : the larger site that this page is a part of. You can keep it as
+                      The Perseids Project or change it to the name of your project.
+                    </li>
+                    <li>
+                      <code>REACT_APP_TITLE</code>
+                      : change this to the title of your site
+                      (it is a good idea to make this the same as the title in
+                      {' '}
+                      <code>config.json</code>
+                      ).
+                    </li>
+                    <li>
+                      <code>REACT_APP_DESCRIPTION</code>
+                      : set this to a one or two sentence description of your project.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Scroll to the bottom of the page to
+                  {' '}
+                  <code>
+                    Commit changes
+                  </code>
+                  {' '}
+                  and enter a message to describe your
+                  change to this file (e.g. something like &quot;Updated metadata&quot;).
+                </li>
+                <li>
+                  Click
+                  {' '}
+                  <code>
+                    Commit changes
+                  </code>
+                  .
                 </li>
               </ol>
             </li>
