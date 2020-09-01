@@ -9462,116 +9462,193 @@ Array [
         <ol>
           <li>
             <b>
-              Reserve a DOI
+              Connect Zenodo to GitHub
             </b>
             <ol>
               <li>
-                Visit
-                 
-                <a
-                  href="https://zenodo.org/deposit/new"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Zenodo
-                </a>
-                , login and create a
+                If you do not have a Zenodo account:
+                <ol>
+                  <li>
+                    Visit
+                     
+                    <a
+                      href="https://zenodo.org/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      zenodo.org
+                    </a>
+                    .
+                  </li>
+                  <li>
+                    Click on the
+                     
+                    <code>
+                      Log in
+                    </code>
+                     
+                    button.
+                    <a
+                      href="zenodo-home.png"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Zenodo home page"
+                        className="img-fluid img-thumbnail"
+                        src="zenodo-home.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    Click on
+                     
+                    <code>
+                      Log in with GitHub
+                    </code>
+                    .
+                    <a
+                      href="zenodo-login.png"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Zenodo login page"
+                        className="img-fluid img-thumbnail"
+                        src="zenodo-login.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    Click on the
+                     
+                    <code>
+                      Authorize zenodo
+                    </code>
+                     
+                    button.
+                    <a
+                      href="zenodo-authorize.png"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Zenodo GitHub authorization page"
+                        className="img-fluid img-thumbnail"
+                        src="zenodo-authorize.png"
+                      />
+                    </a>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                If you already have a Zenodo account but it is not connected to your GitHub account:
+                <ol>
+                  <li>
+                    Log in to Zenodo.
+                  </li>
+                  <li>
+                    Click the drop-down menu with your email address.
+                  </li>
+                  <li>
+                    Select
+                     
+                    <code>
+                      GitHub
+                    </code>
+                    .
+                    <a
+                      href="zenodo-dropdown.png"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Zenodo home page with drop-down menu expanded"
+                        className="img-fluid img-thumbnail"
+                        src="zenodo-dropdown.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    Click on
+                     
+                    <code>
+                      Connect
+                    </code>
+                    .
+                    <a
+                      href="zenodo-connect.png"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Zenodo settings page GitHub tab when GitHub integration is not set up"
+                        className="img-fluid img-thumbnail"
+                        src="zenodo-connect.png"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    Click on the
+                     
+                    <code>
+                      Authorize zenodo
+                    </code>
+                     
+                    button.
+                    <a
+                      href="zenodo-authorize.png"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Zenodo GitHub authorization page"
+                        className="img-fluid img-thumbnail"
+                        src="zenodo-authorize.png"
+                      />
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <b>
+              Enable Zenodo for repository
+            </b>
+            <ol>
+              <li>
+                In Zenodo, click on the drop-down menu with your email address and select
                  
                 <code>
-                  New Upload
+                  GitHub
                 </code>
                 .
-              </li>
-              <li>
-                Click the
-                 
-                <code>
-                  Reserve DOI
-                </code>
-                 
-                button in the
-                 
-                <code>
-                  Basic information
-                </code>
-                 
-                section.
-              </li>
-            </ol>
-          </li>
-          <li>
-            <b>
-              Add the DOI to your treebank-template metadata
-            </b>
-            <ol>
-              <li>
-                In a new tab or window, return to your GitHub repository for your treebank-template.
-              </li>
-              <li>
-                Navigate to the
-                 
-                <code>
-                  Code
-                </code>
-                 
-                tab.
-              </li>
-              <li>
-                Replace the value after the
-                 
-                <code>
-                  doi
-                </code>
-                 
-                field with the URI for you newly reserved DOI. (Make sure it is the full URI, e.g. starting with
-                 
-                <code>
-                  https://dx.doi.org/
-                </code>
-                .)
-              </li>
-              <li>
-                Commit the change to the master branch.
-              </li>
-            </ol>
-          </li>
-          <li>
-            <b>
-              Update the version of your repository
-            </b>
-            <ol>
-              <li>
-                Every time you publish a new set of your data you should create a new versioned release of your repository. (For best practices for versioning we recommend
-                 
                 <a
-                  href="https://semver.org/"
+                  href="zenodo-dropdown.png"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  SemVer
+                  <img
+                    alt="Zenodo home page with drop-down menu expanded"
+                    className="img-fluid img-thumbnail"
+                    src="zenodo-dropdown.png"
+                  />
                 </a>
-                .)
               </li>
               <li>
-                Decide on your version.
-              </li>
-              <li>
-                Edit the
-                 
-                <code>
-                  package.json
-                </code>
-                 
-                file in the root directory of your repository and update the value of the
-                 
-                <code>
-                  version
-                </code>
-                 
-                field.
-              </li>
-              <li>
-                Commit the change to the master branch.
+                Flip the switch for the repository you want to create a DOI for.
+                <a
+                  href="zenodo-switch.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="Zenodo settings page GitHub tab when GitHub integration is set up"
+                    className="img-fluid img-thumbnail"
+                    src="zenodo-switch.png"
+                  />
+                </a>
               </li>
             </ol>
           </li>
@@ -9581,186 +9658,279 @@ Array [
             </b>
             <ol>
               <li>
-                Navigate to the
+                On the GitHub page for the repository, click on the
                  
                 <code>
-                  Code
+                  Actions
                 </code>
                  
-                tab of your GitHub repository.
+                tab.
+                <a
+                  href="github-select-actions.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="GitHub repository with arrow pointing to actions tab"
+                    className="img-fluid img-thumbnail"
+                    src="github-select-actions.png"
+                  />
+                </a>
               </li>
               <li>
-                In the
+                Click on the
                  
                 <code>
-                  Releases
+                  release
                 </code>
                  
-                section on the right hand of the page, click on
+                workflow from the workflow list. (Every time this workflow is run, it archives the code in the GitHub repository using Zenodo.)
+                <a
+                  href="github-select-release.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="GitHub actions page"
+                    className="img-fluid img-thumbnail"
+                    src="github-select-release.png"
+                  />
+                </a>
+              </li>
+              <li>
+                Click on the
                  
                 <code>
-                  Create a new release
+                  Run workflow
                 </code>
-                .
+                 
+                drop-down menu.
+                <a
+                  href="github-run-workflow.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="release workflow page with Run workflow drop-down menu selected"
+                    className="img-fluid img-thumbnail"
+                    src="github-run-workflow.png"
+                  />
+                </a>
               </li>
               <li>
-                Where it asks you to supply the
+                Fill in the version input. The first time that you run this action, you should use
                  
                 <code>
-                  Tag Version
+                  v1.0.0
                 </code>
+                . Subsequent times should conform to
                  
-                enter the version you just specified in your
+                <a
+                  href="https://semver.org/spec/v2.0.0.html"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  SemVer
+                </a>
                  
-                <code>
-                  package.json
-                </code>
-                 
-                in the prior step.
-              </li>
-              <li>
-                Make sure the target is the
-                 
-                <code>
-                  master
-                </code>
-                 
-                branch.
-              </li>
-              <li>
-                Add a title for the release (normally this is the same as the version).
-              </li>
-              <li>
-                Enter a description of your data.
-              </li>
-              <li>
-                Click
-                 
-                <code>
-                  Publish release
-                </code>
-                .
-              </li>
-            </ol>
-          </li>
-          <li>
-            <b>
-              Download a copy of the release data
-            </b>
-            <ol>
-              <li>
-                On the newly created release page, click on the
-                 
-                <code>
-                  source code (tar.gz)
-                </code>
-                 
-                link and download the file to your local device.
-              </li>
-            </ol>
-          </li>
-          <li>
-            <b>
-              Upload the release data to Zenodo
-            </b>
-            <ol>
-              <li>
-                Return to the browser tab in which you are creating your new upload.
-              </li>
-              <li>
-                Add the newly downloaded release file to the upload.
-              </li>
-              <li>
-                Fill in the following metadata fields:
-                <br />
+                as much as possible. This means:
                 <ul>
                   <li>
-                    <b>
-                      Communities:
-                    </b>
-                     
-                    Add the
+                    If you are fixing a typo or making a similar small change, you only increment the last number (e.g.
                      
                     <code>
-                      perseids-project
+                      v1.0.0
                     </code>
                      
-                    community and any others that may be relevant.
-                  </li>
-                  <li>
-                    <b>
-                      Upload type:
-                    </b>
+                    to
                      
-                    Dataset.
+                    <code>
+                      v1.0.1
+                    </code>
+                    ).
                   </li>
                   <li>
-                    <b>
-                      Basic information:
-                    </b>
-                    <ul>
-                      <li>
-                        <b>
-                          Title:
-                        </b>
-                         
-                        The title of the treebank collection.
-                      </li>
-                      <li>
-                        <b>
-                          Authors:
-                        </b>
-                         
-                        The author(s) who contributed to the treebanks.
-                      </li>
-                      <li>
-                        <b>
-                          Description:
-                        </b>
-                         
-                        A description of the dataset.
-                      </li>
-                      <li>
-                        <b>
-                          Version:
-                        </b>
-                         
-                        The release version.
-                      </li>
-                    </ul>
+                    If new treebanks are added, the middle number should be incremented (e.g.
+                     
+                    <code>
+                      v2.2.5
+                    </code>
+                     
+                    to
+                     
+                    <code>
+                      v2.3.0
+                    </code>
+                    ).
                   </li>
                   <li>
-                    <b>
-                      License:
-                    </b>
-                    <ul>
-                      <li>
-                        <b>
-                          Access right:
-                        </b>
-                         
-                        Open Access.
-                      </li>
-                      <li>
-                        <b>
-                          License:
-                        </b>
-                         
-                        Whatever license you are using for your data (e.g.Creative Commons Attribution 4.0 International).
-                      </li>
-                    </ul>
+                    The first number should be incremented if existing treebanks are changed (e.g.
+                     
+                    <code>
+                      v3.1.1
+                    </code>
+                     
+                    to
+                     
+                    <code>
+                      v4.0.0
+                    </code>
+                    ).
                   </li>
                   <li>
-                    Any other fields that are relevant for your data set.
+                    See the list of releases for
+                     
+                    <a
+                      href="https://github.com/perseids-publications/treebank-template/releases"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      perseids-publications/treebank-template
+                    </a>
+                     
+                    for one example of how SemVer is used in practice.
                   </li>
                 </ul>
               </li>
               <li>
-                Click
+                Fill in the description input with a one or two sentence description.
+              </li>
+              <li>
+                Click on the
                  
                 <code>
-                  Publish
+                  Run workflow
                 </code>
+                 
+                button. The release workflow will now run. When it is complete, the code will be published and archived with Zenodo.
+                <a
+                  href="github-workflow-inputs.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="release workflow page with Run workflow drop-down menu selected"
+                    className="img-fluid img-thumbnail"
+                    src="github-workflow-inputs.png"
+                  />
+                </a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <b>
+              Add the DOI to your treebank-template metadata
+            </b>
+            <ol>
+              <li>
+                Visit Zenodo and click on
+                 
+                <code>
+                  Upload
+                </code>
+                . You should now see your repository.
+                <a
+                  href="zenodo-select-upload.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="Zenodo home page with arrow pointing to Upload button"
+                    className="img-fluid img-thumbnail"
+                    src="zenodo-select-upload.png"
+                  />
+                </a>
+              </li>
+              <li>
+                Click on the repository in Zenodo.
+                <a
+                  href="zenodo-upload-list.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="Zenodo list of uploads"
+                    className="img-fluid img-thumbnail"
+                    src="zenodo-upload-list.png"
+                  />
+                </a>
+              </li>
+              <li>
+                Copy the DOI for all versions. (Note that there are multiple DOIs because Zenodo creates a DOI for each release. You specifically want to copy the one for all versions.)
+                <a
+                  href="zenodo-upload.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="Zenodo upload with arrow pointing to DOI for all versions section"
+                    className="img-fluid img-thumbnail"
+                    src="zenodo-upload.png"
+                  />
+                </a>
+              </li>
+              <li>
+                Return to your GitHub repository.
+              </li>
+              <li>
+                Navigate to the
+                 
+                <code>
+                  src
+                </code>
+                 
+                directory of your repository.
+              </li>
+              <li>
+                Click on the
+                 
+                <code>
+                  config.json
+                </code>
+                 
+                file.
+              </li>
+              <li>
+                Click on the pencil icon to edit
+                 
+                <code>
+                  config.json
+                </code>
+                .
+                <a
+                  href="github-edit-file.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="File open in GitHub"
+                    className="img-fluid img-thumbnail"
+                    src="github-edit-file.png"
+                  />
+                </a>
+              </li>
+              <li>
+                Replace the value after the
+                 
+                <code>
+                  doi
+                </code>
+                 
+                field with your newly reserved DOI.
+                <a
+                  href="github-visual-editor.png"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    alt="GitHub visual editor editing config.json"
+                    className="img-fluid img-thumbnail"
+                    src="github-visual-editor.png"
+                  />
+                </a>
+              </li>
+              <li>
+                Commit the change to the master branch.
               </li>
             </ol>
           </li>
