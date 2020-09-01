@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { configType } from '../../../lib/types';
-
 import styles from '../Instructions.module.css';
 
 import fork from './fork.png';
@@ -22,6 +20,8 @@ import env from './env.png';
 import upload from './upload.png';
 import myTreesConfig from './mytrees-config.png';
 import myTreesSite from './mytrees-site.png';
+
+import { configType } from '../../../lib/types';
 
 import InstructionsHeader from '../InstructionsHeader';
 
@@ -929,7 +929,7 @@ const GettingStarted = ({ config }) => (
             GitHub respository). You can also add additional files and publications,
             and
             {' '}
-            <a href="../examples/alpheios-integration/index.html" target="_blank" rel="noopener noreferrer">
+            <a href="../../examples/alpheios-integration" target="_blank" rel="noopener noreferrer">
               integrate it with Alpheios
             </a>
             .

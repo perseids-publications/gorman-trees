@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { configType } from '../../../lib/types';
-
 import styles from '../Instructions.module.css';
 
 import doi from './doi.png';
@@ -20,6 +18,8 @@ import githubRunWorkflow from './github-run-workflow.png';
 import githubWorkflowInputs from './github-workflow-inputs.png';
 import githubEditFile from './github-edit-file.png';
 import githubVisualEditor from './github-visual-editor.png';
+
+import { configType } from '../../../lib/types';
 
 import InstructionsHeader from '../InstructionsHeader';
 

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { configType } from '../../../lib/types';
-
 import styles from '../Instructions.module.css';
 
 import actions from './actions.png';
 import update from './update.png';
 import runWorkflow from './run-workflow.png';
+
+import { configType } from '../../../lib/types';
 
 import InstructionsHeader from '../InstructionsHeader';
 
