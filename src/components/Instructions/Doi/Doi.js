@@ -272,7 +272,7 @@ const Doi = ({ config }) => (
                   The first time that you run this action, you should use
                   {' '}
                   <code>v1.0.0</code>
-                  . Subsequent times should conform to
+                  . On subsequent runs, the version you supply should conform to
                   {' '}
                   <a
                     href="https://semver.org/spec/v2.0.0.html"
@@ -382,7 +382,12 @@ const Doi = ({ config }) => (
                   </a>
                 </li>
                 <li>
-                  Copy the DOI for all versions.
+                  Copy the DOI for
+                  {' '}
+                  <b>
+                    all versions
+                  </b>
+                  .
                   (Note that there are multiple DOIs because Zenodo creates a DOI for each release.
                   You specifically want to copy the one for all versions.)
 

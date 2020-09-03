@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import styles from '../Instructions.module.css';
 
@@ -484,7 +485,7 @@ const GettingStarted = ({ config }) => (
                       ). (More
                       information on adding a DOI is provided in the
                       {' '}
-                      <a href="../doi">DOI instructions</a>
+                      <Link to="/instructions/doi">DOI instructions</Link>
                       .)
                     </li>
                     <li>
@@ -905,7 +906,7 @@ const GettingStarted = ({ config }) => (
                   cited. This DOI can then be listed on the home page of the repository.
                   See the
                   {' '}
-                  <a href="../doi">DOI</a>
+                  <Link to="/instructions/doi">DOI</Link>
                   {' '}
                   instructions for details.
                 </li>
@@ -929,10 +930,19 @@ const GettingStarted = ({ config }) => (
             GitHub respository). You can also add additional files and publications,
             and
             {' '}
-            <a href="../../examples/alpheios-integration" target="_blank" rel="noopener noreferrer">
+            <a href={`${process.env.PUBLIC_URL}/examples/alpheios-integration`} target="_blank" rel="noopener noreferrer">
               integrate it with Alpheios
             </a>
             .
+          </p>
+          <p>
+            The Perseids Treebank Template code is regularly updated with new features.
+            We have created a workflow that makes it easy to pull the updates into your repository.
+            See the
+            {' '}
+            <Link to="/instructions/updating">updating</Link>
+            {' '}
+            instructions for details.
           </p>
           For additional information see also the repository&apos;s
           {' '}

@@ -9923,7 +9923,7 @@ Array [
                 <code>
                   v1.0.0
                 </code>
-                . Subsequent times should conform to
+                . On subsequent runs, the version you supply should conform to
                  
                 <a
                   href="https://semver.org/spec/v2.0.0.html"
@@ -10056,7 +10056,12 @@ Array [
                 </a>
               </li>
               <li>
-                Copy the DOI for all versions. (Note that there are multiple DOIs because Zenodo creates a DOI for each release. You specifically want to copy the one for all versions.)
+                Copy the DOI for
+                 
+                <b>
+                  all versions
+                </b>
+                . (Note that there are multiple DOIs because Zenodo creates a DOI for each release. You specifically want to copy the one for all versions.)
                 <a
                   href="zenodo-upload.png"
                   rel="noopener noreferrer"
@@ -11249,7 +11254,8 @@ Array [
                     ). (More information on adding a DOI is provided in the
                      
                     <a
-                      href="../doi"
+                      href="/instructions/doi"
+                      onClick={[Function]}
                     >
                       DOI instructions
                     </a>
@@ -11753,7 +11759,8 @@ Array [
                 as a a persistent identifier for your data so that it can be easily cited. This DOI can then be listed on the home page of the repository. See the
                  
                 <a
-                  href="../doi"
+                  href="/instructions/doi"
+                  onClick={[Function]}
                 >
                   DOI
                 </a>
@@ -11779,13 +11786,25 @@ Array [
           file (doing so requires a local clone of your GitHub respository). You can also add additional files and publications, and
            
           <a
-            href="../../examples/alpheios-integration"
+            href="/examples/alpheios-integration"
             rel="noopener noreferrer"
             target="_blank"
           >
             integrate it with Alpheios
           </a>
           .
+        </p>
+        <p>
+          The Perseids Treebank Template code is regularly updated with new features. We have created a workflow that makes it easy to pull the updates into your repository. See the
+           
+          <a
+            href="/instructions/updating"
+            onClick={[Function]}
+          >
+            updating
+          </a>
+           
+          instructions for details.
         </p>
         For additional information see also the repository's
          
