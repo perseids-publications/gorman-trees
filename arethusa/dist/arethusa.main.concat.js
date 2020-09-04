@@ -1006,7 +1006,7 @@ angular.module('arethusa').constant('VERSION', {
   revision: '30ce95e400c3e8339345f9a2ac0d44195a33cabc',
   branch: 'widget',
   version: '0.2.5',
-  date: '2020-08-12T17:14:40.487Z',
+  date: '2020-08-26T21:09:47.696Z',
   repository: 'http://github.com/latin-language-toolkit/arethusa'
 });
 
