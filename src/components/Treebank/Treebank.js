@@ -1,9 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {
+  Treebank as TB,
+  Sentence,
+  Text,
+  Graph,
+  Information,
+  Xml,
+  Collapse,
+} from 'treebank-react';
+import fetch from 'cross-fetch';
 
 import { chunksType, publicationMatchType, locationType } from '../../lib/types';
 
 import styles from './Treebank.module.css';
+import 'treebank-react/build/index.css';
 
 import ArethusaWrapper from '../ArethusaWrapper';
 import ControlPanel from '../ControlPanel';
@@ -15,17 +26,33 @@ class Treebank extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      loadedXml: false,
+    };
+
     this.additionalArgs = this.additionalArgs.bind(this);
     this.linkQuery = this.linkQuery.bind(this);
     this.renderArethusa = this.renderArethusa.bind(this);
   }
 
   componentDidMount() {
-    this.renderArethusa();
+    const { xml } = this.props;
+
+    if (this.isExperimental()) {
+      fetch(`${process.env.PUBLIC_URL}/xml/${xml}`)
+        .then((response) => response.text())
+        .then((loadedXml) => {
+          this.setState({ loadedXml });
+        });
+    } else {
+      this.renderArethusa();
+    }
   }
 
   componentDidUpdate() {
-    this.renderArethusa();
+    if (!this.isExperimental()) {
+      this.renderArethusa();
+    }
   }
 
   additionalArgs() {
@@ -38,6 +65,10 @@ class Treebank extends Component {
     const { location: { search } } = this.props;
 
     return linkParams(search);
+  }
+
+  isExperimental() {
+    return this.additionalArgs().experimental === 'true';
   }
 
   renderArethusa() {
@@ -53,8 +84,48 @@ class Treebank extends Component {
 
   render() {
     const { chunks, match } = this.props;
+    const { params: { chunk } } = match;
     const linkQuery = this.linkQuery();
     const fullQuery = this.additionalArgs();
+
+    if (this.isExperimental()) {
+      const { loadedXml } = this.state;
+
+      if (!loadedXml) {
+        return (
+          <div>
+            Loading...
+          </div>
+        );
+      }
+
+      return (
+        <>
+          <ControlPanel
+            match={match}
+            chunks={chunks}
+            fullQuery={fullQuery}
+            linkQuery={linkQuery}
+          />
+          <div className="mb-4">
+            <TB treebank={loadedXml}>
+              <Sentence id={chunk}>
+                <div className={styles.text}>
+                  <Text />
+                </div>
+                <div style={{ display: 'flex', minHeight: '500px', height: '60vh' }}>
+                  <Graph />
+                </div>
+                <Information />
+                <Collapse title="XML">
+                  <Xml />
+                </Collapse>
+              </Sentence>
+            </TB>
+          </div>
+        </>
+      );
+    }
 
     return (
       <>

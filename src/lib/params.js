@@ -3,6 +3,7 @@ import queryString from 'query-string';
 const params = [
   { name: 'w', type: 'array' },
   { name: 'config', type: 'string', link: true },
+  { name: 'experimental', type: 'string', link: true },
 ];
 
 const convertToType = (value, type) => {
