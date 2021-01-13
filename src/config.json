@@ -1,6 +1,7 @@
 {
   "title": "Gorman Trees",
   "subtitle": "Greek prose trees by Vanessa Gorman, Prof. of History, University of Nebraska-Lincoln, vgorman1@unl.edu and vbgorman@gmail.com\n\nThe treebanks are licensed under the CC0 1.0 license (see [TREEBANK_LICENSE](https://github.com/vgorman1/Greek-Dependency-Trees/blob/master/TREEBANK%20LICENSE) file). Please cite: Version 1.0.1 (31 December 2019) DOI: 10.5281/zenodo.3596076\n\n[https://github.com/vgorman1/Greek-Dependency-Trees](https://github.com/vgorman1/Greek-Dependency-Trees)",
+  "treebankReact": true,
   "doi": "https://doi.org/10.5281/zenodo.3596076",
   "report": "https://github.com/perseids-publications/gorman-trees/issues",
   "github": "https://github.com/perseids-publications/gorman-trees",
@@ -200,7 +201,7 @@
             {
               "locus": "12.1-12.9",
               "path": "athen12-1-9-jan-15",
-              "xml": "athen12-1-9-jan-15.xml",
+              "xml": "athen12-1-9-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 123
@@ -209,10 +210,10 @@
             {
               "locus": "12.10-12.19",
               "path": "athen12-10-19-jan-15",
-              "xml": "athen12-10-19-jan-15.xml",
+              "xml": "athen12-10-19-2019.xml",
               "chunks": {
                 "start": 1,
-                "end": 155
+                "end": 150
               }
             },
             {
@@ -370,6 +371,7 @@
             {
               "locus": "1-28",
               "path": "demosthenes-1-bu1",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
               "xml": "demosthenes-1-bu1.xml",
               "chunks": {
                 "start": 1,
@@ -458,6 +460,114 @@
           ]
         },
         {
+          "path": "demosthenes-against-stephanus-2",
+          "author": "Demosthenes",
+          "work": "46. Against Stephanus 2",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-28",
+              "path": "demosthenes-46-tree",
+              "xml": "demosthenes-46-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 86
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-against-evergus-and-mnesibulus",
+          "author": "Demosthenes",
+          "work": "47. Against Evergus and Mnesibulus",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-82",
+              "path": "demosthenes-47-tree",
+              "xml": "demosthenes-47-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 205
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-against-timotheus",
+          "author": "Demosthenes",
+          "work": "49. Against Timotheus",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-69",
+              "path": "demosthenes-49-tree",
+              "xml": "demosthenes-49-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 156
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-against-polycles",
+          "author": "Demosthenes",
+          "work": "50. Against Polycles",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-68",
+              "path": "demosthenes-50-tree",
+              "xml": "demosthenes-50-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 169
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-against-callippus",
+          "author": "Demosthenes",
+          "work": "52. Against Callippus",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-33",
+              "path": "demosthenes-52-tree",
+              "xml": "demosthenes-52-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 85
+              }
+            }
+          ]
+        },
+        {
+          "path": "demosthenes-against-nicostratus",
+          "author": "Demosthenes",
+          "work": "53. Against Nicostratus",
+          "editors": "Vanessa Gorman",
+          "sections": [
+            {
+              "locus": "1-29",
+              "path": "demosthenes-53-tree",
+              "xml": "demosthenes-53-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 74
+              }
+            }
+          ]
+        },
+        {
           "path": "demosthenes-apollodorus-against-neaera",
           "author": "Demosthenes",
           "work": "59. Apollodorus Against Neaera",
@@ -467,6 +577,7 @@
               "locus": "1-126",
               "path": "dem-59-neaira-2019",
               "xml": "dem-59-neaira-2019.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
               "chunks": {
                 "start": 1,
                 "end": 312
@@ -530,7 +641,7 @@
         {
           "path": "dionysius-of-halicarnassus-antiquitates-romanae-books-i-xx",
           "author": "Dionysius of Halicarnassus",
-          "work": "Antiquitates Romanae, Books I-XX",
+          "work": "Antiquitates Romanae",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -592,7 +703,7 @@
         {
           "path": "flavius-josephus-de-bello-judaico-libri-vii",
           "author": "Flavius Josephus",
-          "work": "De bello Judaico, libri vii",
+          "work": "De Bello Judaico",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -660,7 +771,7 @@
             {
               "locus": "1.1-1.19",
               "path": "hdt-1-1-19-bu3",
-              "xml": "hdt-1-1-19-bu3.xml",
+              "xml": "hdt-1-1-19-bu3-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 126
@@ -669,7 +780,7 @@
             {
               "locus": "1.20-1.39",
               "path": "hdt-1-20-39-bu2",
-              "xml": "hdt-1-20-39-bu2.xml",
+              "xml": "hdt-1-20-39-bu2-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 152
@@ -678,7 +789,7 @@
             {
               "locus": "1.40-1.59",
               "path": "hdt-1-40-59-bu2",
-              "xml": "hdt-1-40-59-bu2.xml",
+              "xml": "hdt-1-40-59-bu2-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 101
@@ -687,7 +798,7 @@
             {
               "locus": "1.60-1.79",
               "path": "hdt-1-60-79-bu2",
-              "xml": "hdt-1-60-79-bu2.xml",
+              "xml": "hdt-1-60-79-bu2-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 166
@@ -696,7 +807,7 @@
             {
               "locus": "1.80.1-1.99.2",
               "path": "hdt-1-80-99-bu5",
-              "xml": "hdt-1-80-99-bu5.xml",
+              "xml": "hdt-1-80-99-bu5-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 185
@@ -705,7 +816,7 @@
             {
               "locus": "1.100.1-1.119.7",
               "path": "hdt-1-100-119-bu3",
-              "xml": "hdt-1-100-119-bu3.xml",
+              "xml": "hdt-1-100-119-bu3-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 136
@@ -714,7 +825,7 @@
             {
               "locus": "1.120.1-1.149.2",
               "path": "hdt-1-120-149-bu2",
-              "xml": "hdt-1-120-149-bu2.xml",
+              "xml": "hdt-1-120-149-bu2-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 205
@@ -723,7 +834,7 @@
             {
               "locus": "1.150-1.169",
               "path": "hdt-1-150-169-bu3",
-              "xml": "hdt-1-150-169-bu3.xml",
+              "xml": "hdt-1-150-169-bu3-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 120
@@ -732,7 +843,7 @@
             {
               "locus": "1.170-1.189",
               "path": "hdt-1-170-189-bu2",
-              "xml": "hdt-1-170-189-bu2.xml",
+              "xml": "hdt-1-170-189-bu2-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 145
@@ -741,7 +852,7 @@
             {
               "locus": "1.190-1.216",
               "path": "hdt-1-190-216-bu2",
-              "xml": "hdt-1-190-216-bu2.xml",
+              "xml": "hdt-1-190-216-bu2-2019.xml",
               "chunks": {
                 "start": 1,
                 "end": 219
@@ -877,7 +988,7 @@
             {
               "locus": "17a-42a (entire)",
               "path": "plato-apology-17a-42a",
-              "xml": "plato-apology-17a-42a.xml",
+              "xml": "plato-apology.xml",
               "chunks": {
                 "start": 1,
                 "end": 481
@@ -914,7 +1025,7 @@
         {
           "path": "plutarch-de-alexandri-magni-fortuna-aut-virtute",
           "author": "Plutarch",
-          "work": "De Alexandri magni fortuna aut virtute",
+          "work": "De Alexandri Magni Fortuna aut Virtute",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -931,7 +1042,7 @@
         {
           "path": "plutarch-de-fortuna-romanorum",
           "author": "Plutarch",
-          "work": "De fortuna Romanorum",
+          "work": "De Fortuna Romanorum",
           "editors": "Vanessa Gorman",
           "sections": [
             {
@@ -1266,8 +1377,8 @@
           "sections": [
             {
               "locus": "1.1-3.13",
-              "path": "ps-xen-ath-pol-bu1",
-              "xml": "ps-xen-ath-pol-bu1.xml",
+              "path": "ps-xen-ath-pol-bu2",
+              "xml": "ps-xen-ath-pol-bu2.xml",
               "chunks": {
                 "start": 1,
                 "end": 170
@@ -1403,6 +1514,26 @@
               "chunks": {
                 "start": 1,
                 "end": 217
+              }
+            },
+            {
+              "locus": "7.1.1-7.3.16",
+              "path": "xen-cyr-7-1-3-tree",
+              "xml": "xen-cyr-7-1-3-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 326
+              }
+            },
+            {
+              "locus": "7.4.1-7.5.86",
+              "path": "xen-cyr-7-4-5-tree",
+              "xml": "xen-cyr-7-4-5-tree.xml",
+              "notes": "This tree was digitally pre-parsed by Alek Keersmaekers and Toon van Hal of the [Pedalion Project](http://en.pedalion.org/) before being hand-corrected by Vanessa Gorman.",
+              "chunks": {
+                "start": 1,
+                "end": 280
               }
             },
             {
