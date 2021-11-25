@@ -72,31 +72,45 @@ class Publication extends Component {
     super(props);
 
     this.state = {
+      arethusaLoaded: false,
       subDoc: '',
     };
 
+    this.setSubdoc = this.setSubdoc.bind(this);
+
     this.arethusa = new ArethusaWrapper();
-    this.arethusaSubDocFun = this.arethusaSubDocFun.bind(this);
   }
 
   componentDidMount() {
     // eslint-disable-next-line no-undef
-    window.arethusaSubDocFun = this.arethusaSubDocFun;
+    window.document.body.addEventListener('ArethusaLoaded', this.setSubdoc);
+  }
+
+  componentDidUpdate(prevProps) {
+    const { arethusaLoaded } = this.state;
+    const { location } = this.props;
+    const { location: prevLocation } = prevProps;
+
+    if (arethusaLoaded && location !== prevLocation) {
+      this.setSubdoc();
+    }
   }
 
   componentWillUnmount() {
     // eslint-disable-next-line no-undef
-    window.arethusaSubDocFun = undefined;
+    window.document.body.removeEventListener('ArethusaLoaded', this.setSubdoc);
   }
 
-  arethusaSubDocFun(subDoc) {
-    this.setState({ subDoc });
+  setSubdoc() {
+    const subDoc = this.arethusa.getSubdoc();
+    this.setState({ subDoc, arethusaLoaded: true });
   }
 
   render() {
     const {
       logo,
       link,
+      treebankReact,
       publicationPath,
       author,
       work,
@@ -141,13 +155,13 @@ class Publication extends Component {
           </h2>
           <table className="table">
             <tbody>
-              {author && renderRow('Author', author)}
-              {work && renderRow('Work', work)}
-              {locus && renderLocusRow('Locus', locus, publicationPath)}
-              {subDoc && renderRow('Reference', subDoc)}
-              {editors && renderRow('Editors', editors)}
-              {publicationLink && renderLinkRow('Link', publicationLink)}
-              {notes && renderMarkdownRow('Notes', notes)}
+              {!!author && renderRow('Author', author)}
+              {!!work && renderRow('Work', work)}
+              {!!locus && renderLocusRow('Locus', locus, publicationPath)}
+              {!!subDoc && renderRow('Reference', subDoc)}
+              {!!editors && renderRow('Editors', editors)}
+              {!!publicationLink && renderLinkRow('Link', publicationLink)}
+              {!!notes && renderMarkdownRow('Notes', notes)}
             </tbody>
           </table>
           <div className={styles.treebankWrapper}>
@@ -157,11 +171,13 @@ class Publication extends Component {
               location={location}
               match={match}
               arethusa={this.arethusa}
+              treebankReact={treebankReact}
+              setSubdoc={(s) => this.setState({ subDoc: s })}
             />
           </div>
           <div className="pt-1 pb-4 text-right">
             <a href={`${process.env.PUBLIC_URL}/xml/${xml}`} target="_blank" rel="noopener noreferrer">
-              View XML
+              View full XML
             </a>
           </div>
         </div>
@@ -173,6 +189,7 @@ class Publication extends Component {
 Publication.propTypes = {
   logo: PropTypes.string,
   link: PropTypes.string,
+  treebankReact: PropTypes.bool,
   publicationPath: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   work: PropTypes.string.isRequired,
@@ -192,6 +209,7 @@ Publication.propTypes = {
 Publication.defaultProps = {
   logo: undefined,
   link: undefined,
+  treebankReact: false,
   publicationLink: undefined,
   notes: undefined,
 };

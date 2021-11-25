@@ -32,6 +32,21 @@ it('renders the main page with markdown in the subtitle', () => {
   config.subtitle = subtitle;
 });
 
+it('renders the footer with a doi', () => {
+  config.doi = 'https://www.example.com/doi';
+
+  const component = (
+    <MemoryRouter initialEntries={['/']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  delete config.doi;
+});
+
 it('renders a publication', () => {
   const component = (
     <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
@@ -83,12 +98,16 @@ it('renders a publication with a subdoc', () => {
     </MemoryRouter>
   );
   const renderedComponent = renderer.create(component);
+  const originalArethusaApiGetSubdocFun = window.arethusaApiGetSubdocFun;
 
-  window.arethusaSubDocFun('1.1');
+  window.arethusaApiGetSubdocFun = () => '1.1';
+  window.document.body.dispatchEvent(new window.Event('ArethusaLoaded'));
 
   const tree = renderedComponent.toJSON();
 
   expect(tree).toMatchSnapshot();
+
+  window.arethusaApiGetSubdocFun = originalArethusaApiGetSubdocFun;
 });
 
 it('renders a publication with a numbers array', () => {
@@ -174,4 +193,63 @@ it('renders a custom link', () => {
   expect(tree).toMatchSnapshot();
 
   delete config.link;
+});
+
+it('renders the getting started page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/getting-started']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders the doi page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/doi']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders the update page', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/updating']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders 404 when no instruction route matches', () => {
+  const component = (
+    <MemoryRouter initialEntries={['/instructions/a/b/c']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+});
+
+it('renders differently when treebankReact is set', () => {
+  config.treebankReact = true;
+
+  const component = (
+    <MemoryRouter initialEntries={['/on-the-murder-of-eratosthenes-1-50/1']}>
+      <Page config={config} />
+    </MemoryRouter>
+  );
+  const tree = renderer.create(component).toJSON();
+
+  expect(tree).toMatchSnapshot();
+
+  delete config.treebankReact;
 });

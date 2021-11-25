@@ -1,5 +1,11 @@
 import {
-  arrayOf, number, shape, string, oneOfType, element,
+  arrayOf,
+  bool,
+  element,
+  number,
+  oneOfType,
+  shape,
+  string,
 } from 'prop-types';
 
 export const chunksType = shape({
@@ -37,10 +43,12 @@ export const configType = shape({
   title: oneOfType([string, element]).isRequired,
   subtitle: string.isRequired,
   copyright: string,
+  doi: string,
   report: string,
   github: string,
   twitter: string,
   collections: arrayOf(collectionType).isRequired,
+  treebankReact: bool,
 });
 
 export const locationType = shape({
@@ -60,6 +68,6 @@ export const publicationGroupMatchType = shape({
 });
 
 export const queryType = shape({
-  w: string,
+  w: arrayOf(string),
   config: string,
 });
